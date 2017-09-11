@@ -5,10 +5,10 @@ var requestOptions = {
   path: '/http-examples/step6/lowercase.html'
 };
 
-function printUpperCase(html) {
-  var upperCaseHTML = html.toLowerCase();
+function printLowerCase(html) {
+  var lowerCaseHTML = html.toLowerCase();
 
-  console.log(upperCaseHTML);
+  console.log(lowerCaseHTML);
 }
 
-getHTML(requestOptions, printUpperCase);
+getHTML(requestOptions, printLowerCase);
