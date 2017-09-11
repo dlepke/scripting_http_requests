@@ -11,20 +11,16 @@ function getAndPrintHTMLChunks() { //should utilize https library to GET a given
     path: '/http-examples/step1.html'
   };
 
-  var rawData = '';
 
   https.get(requestOptions, function (response) {
 
     response.setEncoding('utf8');
 
-    var rawData = '';
 
     response.on('data', function(chunk) {
-      rawData += chunk;
       console.log(chunk + '\n')
     })
   })
-
 };
 
 getAndPrintHTMLChunks();
